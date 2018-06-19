@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "My Extension",
+    "version": "1.0.01",
+    "page_action": {
+        "default_icon": "icon.png",
+        "default_title": "我是pageAction",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+            "matches": ["http://blearning.remotedu.com/*"],
+            "js": ["./cheat.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
